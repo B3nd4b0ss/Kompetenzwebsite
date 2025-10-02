@@ -18,12 +18,15 @@
 					C1E – Datentyp transformieren (Quiz)
 				</button>
 				<button onclick="startQuiz('quiz3')">
-					C2F – Skalentyp anwenden
+					C2G – Skalentyp erläutern
 				</button>
 				<button onclick="startQuiz('quiz4')">
-					C2E – Skalentyp auswählen
+					C2F – Skalentyp anwenden
 				</button>
 				<button onclick="startQuiz('quiz5')">
+					C2E – Skalentyp auswählen
+				</button>
+				<button onclick="startQuiz('quiz6')">
 					C1E - Datentyp transformieren (umwandlung)
 				</button>
 			</div>
@@ -228,7 +231,59 @@
 				<button onclick="goHome()">Zurück zum Menü</button>
 			</div>
 
-			<!-- Quiz 3 -->
+			<!-- Quiz 3-->
+
+			<div id="quiz3" class="quiz hidden">
+				<h2>C2G – Skalentyp erläutern (Flashcards)</h2>
+				<p>Klicke auf die Karten, um die Begründung zu sehen:</p>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Nominalskala</div>
+						<div class="card-face card-back">
+                            <ul>
+                                <li>Was sie ist: Eine Skala, die nur Gleichheit oder Ungleichheit von Merkmalen ausdrückt und keine Rangfolge zulässt.</li>
+                                <li>Beispiele: Geschlecht, Blutgruppen, Telefonnummern. </li>
+                            </ul>
+                        </div>
+					</div>
+				</div>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Ordinalskala</div>
+						<div class="card-face card-back">
+							<ul>
+                                <li>Was sie ist: Eine Skala, die eine Rangordnung der Merkmale zulässt, aber keine genauen Abstände zwischen den Werten angibt.</li>
+                                <li>Beispiele: Schulnoten, Platzierungen in einem Wettkampf.</li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Intervallskala</div>
+						<div class="card-face card-back">
+							<ul>
+                                <li>Eine Skala, bei der die Abstände zwischen den Zahlen bedeutsam sind und als gleich angesehen werden. Sie besitzt jedoch keinen natürlichen Nullpunkt, wodurch Verhältnisse nicht sinnvoll gebildet werden können.</li>
+                                <li>Beispiele: Temperatur in °C, IQ-Werte.</li>
+                        </ul>
+						</div>
+					</div>
+				</div>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Verhältnisskala</div>
+						<div class="card-face card-back">
+							<ul>
+                                <li>Was sie ist: Die höchste Skalenstufe, die einen natürlichen Nullpunkt besitzt. Sowohl die Abstände als auch die Verhältnisse zwischen Zahlen haben eine sinnvolle Bedeutung. </li>
+                                <li>Beispiele: Länge, Gewicht, Absolute Temperatur (Kelvin).</li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+
+			<!-- Quiz 4 -->
 			<div id="quiz3" class="quiz hidden">
 				<h2>C2F – Skalentyp anwenden</h2>
 				<form id="form3">
@@ -324,7 +379,7 @@
 				<button onclick="goHome()">Zurück zum Menü</button>
 			</div>
 
-			<!-- Quiz 4 (Flashcards) -->
+			<!-- Quiz 5 (Flashcards) -->
 			<div id="quiz4" class="quiz hidden">
 				<h2>C2E – Skalentyp auswählen (Flashcards)</h2>
 				<p>Klicke auf die Karten, um die Begründung zu sehen:</p>
@@ -371,8 +426,8 @@
 				<button onclick="goHome()">Zurück zum Menü</button>
 			</div>
 
-			<!-- Quiz 5 (Umwandlung) -->
-			<div id="quiz5" class="quiz hidden">
+			<!-- Quiz 6 (Umwandlung) -->
+			<div id="quiz6" class="quiz hidden">
 				<h2>C1E – Datentyp transformieren (Umwandlung)</h2>
 				<p>
 					Gib einen Wert ein, wähle den gewünschten Datentyp und
