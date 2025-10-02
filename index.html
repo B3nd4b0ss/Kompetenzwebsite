@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Kompetenznachweis</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Startmenü -->
+			<div id="start-menu" class="menu">
+				<h1>Kompetenz-Quiz</h1>
+				<p>Wähle eine Kompetenz:</p>
+				<button onclick="startQuiz('quiz1')">
+					C1F – Datentyp bestimmen
+				</button>
+				<button onclick="startQuiz('quiz2')">
+					C1E – Datentyp transformieren
+				</button>
+				<button onclick="startQuiz('quiz3')">
+					C2F – Skalentyp anwenden
+				</button>
+				<button onclick="startQuiz('quiz4')">
+					C2E – Skalentyp auswählen
+				</button>
+			</div>
+
+			<!-- Quiz 1 -->
+			<div id="quiz1" class="quiz hidden">
+				<h2>C1F – Datentyp bestimmen</h2>
+				<form id="form1">
+					<p>
+						1) Welcher Datentyp ist geeignet für das Alter einer
+						Person?
+					</p>
+					<label>
+						<input type="radio" name="q1_1" value="0" />
+						String
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_1" value="1" />
+						Integer
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_1" value="0" />
+						Boolean
+					</label>
+					<br />
+					<br />
+
+					<p>2) Welcher Datentyp passt zu "true/false"?</p>
+					<label>
+						<input type="radio" name="q1_2" value="0" />
+						Integer
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_2" value="1" />
+						Boolean
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_2" value="0" />
+						String
+					</label>
+					<br />
+					<br />
+
+					<p>3) Preis in Euro mit Nachkommastellen?</p>
+					<label>
+						<input type="radio" name="q1_3" value="1" />
+						Float
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_3" value="0" />
+						Boolean
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_3" value="0" />
+						String
+					</label>
+					<br />
+					<br />
+
+					<p>4) Telefonnummer (z. B. +41 79 123 45 67)?</p>
+					<label>
+						<input type="radio" name="q1_4" value="0" />
+						Integer
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_4" value="1" />
+						String
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_4" value="0" />
+						Float
+					</label>
+					<br />
+					<br />
+
+					<p>5) Name einer Person?</p>
+					<label>
+						<input type="radio" name="q1_5" value="1" />
+						String
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_5" value="0" />
+						Boolean
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q1_5" value="0" />
+						Float
+					</label>
+					<br />
+					<br />
+				</form>
+				<button onclick="checkQuiz('form1','result1')">
+					Auswerten
+				</button>
+				<p id="result1" class="result hidden"></p>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+
+			<!-- Quiz 2 -->
+			<div id="quiz2" class="quiz hidden">
+				<h2>C1E – Datentyp transformieren</h2>
+				<form id="form2">
+					<p>1) Zahl 42 in String umwandeln?</p>
+					<label>
+						<input type="radio" name="q2_1" value="1" />
+						String(42)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_1" value="0" />
+						parseInt("42")
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_1" value="0" />
+						Number(42)
+					</label>
+					<br />
+
+					<p>2) String "123" in Zahl?</p>
+					<label>
+						<input type="radio" name="q2_2" value="1" />
+						Number("123")
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_2" value="0" />
+						String("123")
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_2" value="0" />
+						Boolean("123")
+					</label>
+					<br />
+
+					<p>3) Zahl 0 in Boolean?</p>
+					<label>
+						<input type="radio" name="q2_3" value="1" />
+						Boolean(0)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_3" value="0" />
+						Number(0)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_3" value="0" />
+						String(0)
+					</label>
+					<br />
+
+					<p>4) Zahl 3.14 in Ganzzahl?</p>
+					<label>
+						<input type="radio" name="q2_4" value="1" />
+						parseInt(3.14)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_4" value="0" />
+						String(3.14)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_4" value="0" />
+						Boolean(3.14)
+					</label>
+					<br />
+
+					<p>5) Boolean true in String?</p>
+					<label>
+						<input type="radio" name="q2_5" value="1" />
+						String(true)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_5" value="0" />
+						Number(true)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q2_5" value="0" />
+						parseInt(true)
+					</label>
+					<br />
+				</form>
+				<button onclick="checkQuiz('form2','result2')">
+					Auswerten
+				</button>
+				<p id="result2" class="result hidden"></p>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+
+			<!-- Quiz 3 -->
+			<div id="quiz3" class="quiz hidden">
+				<h2>C2F – Skalentyp anwenden</h2>
+				<form id="form3">
+					<p>1) Blutgruppen (A, B, AB, 0)?</p>
+					<label>
+						<input type="radio" name="q3_1" value="1" />
+						Nominalskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_1" value="0" />
+						Ordinalskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_1" value="0" />
+						Intervallskala
+					</label>
+					<br />
+
+					<p>2) Schulnoten (1–6)?</p>
+					<label>
+						<input type="radio" name="q3_2" value="0" />
+						Nominalskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_2" value="1" />
+						Ordinalskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_2" value="0" />
+						Intervallskala
+					</label>
+					<br />
+
+					<p>3) Temperatur in °C?</p>
+					<label>
+						<input type="radio" name="q3_3" value="1" />
+						Intervallskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_3" value="0" />
+						Verhältnisskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_3" value="0" />
+						Ordinalskala
+					</label>
+					<br />
+
+					<p>4) Gewicht in kg?</p>
+					<label>
+						<input type="radio" name="q3_4" value="0" />
+						Nominalskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_4" value="1" />
+						Verhältnisskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_4" value="0" />
+						Ordinalskala
+					</label>
+					<br />
+
+					<p>5) Postleitzahl?</p>
+					<label>
+						<input type="radio" name="q3_5" value="1" />
+						Nominalskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_5" value="0" />
+						Ordinalskala
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q3_5" value="0" />
+						Verhältnisskala
+					</label>
+					<br />
+				</form>
+				<button onclick="checkQuiz('form3','result3')">
+					Auswerten
+				</button>
+				<p id="result3" class="result hidden"></p>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+
+			<!-- Quiz 4 (Flashcards) -->
+			<div id="quiz4" class="quiz hidden">
+				<h2>C2E – Skalentyp auswählen (Flashcards)</h2>
+				<p>Klicke auf die Karten, um die Begründung zu sehen:</p>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Temperatur in °C</div>
+						<div class="card-face card-back">
+							Intervallskala: Nullpunkt ist willkürlich
+						</div>
+					</div>
+				</div>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Alter in Jahren</div>
+						<div class="card-face card-back">
+							Verhältnisskala: natürlicher Nullpunkt
+						</div>
+					</div>
+				</div>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Schulnoten (1–6)</div>
+						<div class="card-face card-back">
+							Ordinalskala: Reihenfolge, Abstände ungleich
+						</div>
+					</div>
+				</div>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Haarfarbe</div>
+						<div class="card-face card-back">
+							Nominalskala: Kategorien ohne Ordnung
+						</div>
+					</div>
+				</div>
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Einkommen in CHF</div>
+						<div class="card-face card-back">
+							Verhältnisskala: sinnvoller Nullpunkt
+						</div>
+					</div>
+				</div>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
