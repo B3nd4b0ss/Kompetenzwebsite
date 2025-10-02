@@ -15,13 +15,16 @@
 					C1F – Datentyp bestimmen
 				</button>
 				<button onclick="startQuiz('quiz2')">
-					C1E – Datentyp transformieren
+					C1E – Datentyp transformieren (Quiz)
 				</button>
 				<button onclick="startQuiz('quiz3')">
 					C2F – Skalentyp anwenden
 				</button>
 				<button onclick="startQuiz('quiz4')">
 					C2E – Skalentyp auswählen
+				</button>
+				<button onclick="startQuiz('quiz5')">
+					C1E - Datentyp transformieren (umwandlung)
 				</button>
 			</div>
 
@@ -365,6 +368,31 @@
 						</div>
 					</div>
 				</div>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+
+			<!-- Quiz 5 (Umwandlung) -->
+			<div id="quiz5" class="quiz hidden">
+				<h2>C1E – Datentyp transformieren (Umwandlung)</h2>
+				<p>
+					Gib einen Wert ein, wähle den gewünschten Datentyp und
+					klicke auf "Umwandeln":
+				</p>
+
+				<input
+					type="text"
+					id="inputValue"
+					placeholder="Wert eingeben" />
+				<select id="targetType">
+					<option value="int">Integer</option>
+					<option value="float">Float</option>
+					<option value="string">String</option>
+					<option value="boolean">Boolean</option>
+				</select>
+				<button onclick="convertValue()">Umwandeln</button>
+
+				<p id="conversionResult" class="result hidden"></p>
+
 				<button onclick="goHome()">Zurück zum Menü</button>
 			</div>
 		</div>

@@ -36,3 +36,46 @@ function flip(cardDiv) {
 	const card = cardDiv.querySelector('.card');
 	card.classList.toggle('flip');
 }
+
+// Wert umwandeln
+function convertValue() {
+	const value = document.getElementById('inputValue').value;
+	const target = document.getElementById('targetType').value;
+	let result;
+
+	try {
+		switch (target) {
+			case 'int':
+				result = parseInt(value);
+				if (isNaN(result)) result = 'Ungültige Zahl';
+				break;
+			case 'float':
+				result = parseFloat(value);
+				if (isNaN(result)) result = 'Ungültige Zahl';
+				break;
+			case 'string':
+				result = '"' + String(value) + '"';
+				break;
+			case 'boolean':
+				// Boolean("false") wäre true, deshalb extra behandelt:
+				if (
+					value.toLowerCase() === 'false' ||
+					value === '0' ||
+					value === ''
+				) {
+					result = false;
+				} else {
+					result = true;
+				}
+				break;
+			default:
+				result = 'Unbekannter Typ';
+		}
+	} catch (e) {
+		result = 'Fehler bei der Umwandlung';
+	}
+
+	const output = document.getElementById('conversionResult');
+	output.textContent = `Ergebnis: ${result} (Typ: ${typeof result})`;
+	output.classList.remove('hidden');
+}
