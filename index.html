@@ -41,6 +41,21 @@
 				<button onclick="startQuiz('quiz10')">
 					E1G – Datenschutz in Statistiken
 				</button>
+				<button onclick="startQuiz('quiz11')">
+					H1F – Schlüssel auswählen
+				</button>
+				<button onclick="startQuiz('quiz12')">
+					H1E – Schlüsselkandidaten analysieren
+				</button>
+				<button onclick="startQuiz('quiz13')">
+					G1G – Konzeptionelles vs. logisches Modell
+				</button>
+				<button onclick="startQuiz('quiz14')">
+					G1F – Konzeptionelles Modell → Logisches Modell
+				</button>
+				<button onclick="startQuiz('quiz15')">
+					G1E – Reverse Engineering
+				</button>
 			</div>
 
 			<!-- Quiz 1 -->
@@ -767,6 +782,351 @@
 						<div class="card-face card-back">
 							Re-Identifikation möglich, wenn zu viele Details
 							vorhanden sind.
+						</div>
+					</div>
+				</div>
+
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz11" class="quiz hidden">
+				<h2>H1F – Schlüssel auswählen</h2>
+				<p>Klicke auf die Karten:</p>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Einfacher Schlüssel
+						</div>
+						<div class="card-face card-back">
+							Ein einziges Attribut identifiziert eindeutig eine
+							Entität.
+							<br />
+							Beispiel: AHV-Nummer, Matrikelnummer.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Zusammengesetzter Schlüssel
+						</div>
+						<div class="card-face card-back">
+							Eine Kombination aus mehreren Attributen ist
+							eindeutig.
+							<br />
+							Beispiel: (Kursnummer, Semester), (Vorname, Name,
+							Geburtsdatum).
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Künstlicher Schlüssel
+						</div>
+						<div class="card-face card-back">
+							Ein künstlich erzeugter, eindeutiger Schlüssel.
+							<br />
+							Beispiel: Auto-Increment ID, UUID.
+						</div>
+					</div>
+				</div>
+
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz12" class="quiz hidden">
+				<h2>H1E – Schlüsselkandidaten analysieren</h2>
+				<form id="form12">
+					<p>
+						1) Welche Eigenschaft sollte ein Schlüssel NICHT haben?
+					</p>
+					<label>
+						<input type="radio" name="q12_1" value="0" />
+						Eindeutig
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_1" value="0" />
+						Unveränderlich
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_1" value="1" />
+						Datenschutzkritisch
+					</label>
+					<br />
+
+					<p>
+						2) Warum ist die alte AHV-Nummer als Schlüssel
+						ungeeignet?
+					</p>
+					<label>
+						<input type="radio" name="q12_2" value="1" />
+						Sie enthält persönliche Informationen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_2" value="0" />
+						Sie ist nicht eindeutig
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_2" value="0" />
+						Sie ist zu kurz
+					</label>
+					<br />
+
+					<p>
+						3) Warum ist eine 8-stellige Artikelnummer
+						problematisch?
+					</p>
+					<label>
+						<input type="radio" name="q12_3" value="1" />
+						Kann sich ändern (Sortimentwechsel)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_3" value="0" />
+						Zu lang
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_3" value="0" />
+						Doppelt erlaubt
+					</label>
+					<br />
+
+					<p>
+						4) Warum eignet sich die IPv4-Adresse schlecht als
+						Schlüssel?
+					</p>
+					<label>
+						<input type="radio" name="q12_4" value="1" />
+						Sie kann sich häufig ändern
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_4" value="0" />
+						Sie ist nicht eindeutig
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_4" value="0" />
+						Sie ist zu komplex
+					</label>
+					<br />
+
+					<p>5) Welche Aussage zu künstlichen Schlüsseln stimmt?</p>
+					<label>
+						<input type="radio" name="q12_5" value="1" />
+						Sie sind stabil und ändern sich nie
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_5" value="0" />
+						Sie enthalten Fachinformationen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q12_5" value="0" />
+						Sie sind schwer zu erzeugen
+					</label>
+					<br />
+				</form>
+
+				<button onclick="checkQuiz('form12','result12')">
+					Auswerten
+				</button>
+				<p id="result12" class="result hidden"></p>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz13" class="quiz hidden">
+				<h2>G1G – Konzeptionelles vs. logisches Modell</h2>
+				<p>Klicke auf die Karten:</p>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Konzeptionelles Modell
+						</div>
+						<div class="card-face card-back">
+							Beschreibt die Realität verständlich.
+							<br />
+							Entitäten, Attribute, Kardinalitäten.
+							<br />
+							Technologieunabhängig.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Logisches Modell</div>
+						<div class="card-face card-back">
+							Umsetzung für relationale DB.
+							<br />
+							Tabellen, Primärschlüssel, Fremdschlüssel,
+							Zwischentabellen.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Hauptunterschied</div>
+						<div class="card-face card-back">
+							Konzeptionell = Fachsicht
+							<br />
+							Logisch = Datenbanksicht
+						</div>
+					</div>
+				</div>
+
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz14" class="quiz hidden">
+				<h2>G1F – Konzeptionelles → Logisches Modell</h2>
+				<form id="form14">
+					<p>1) Was wird beim Übergang erzeugt?</p>
+					<label>
+						<input type="radio" name="q14_1" value="1" />
+						Tabellen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_1" value="0" />
+						Dateien
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_1" value="0" />
+						Graphen
+					</label>
+					<br />
+
+					<p>2) Was wird aus einer n:m-Beziehung?</p>
+					<label>
+						<input type="radio" name="q14_2" value="1" />
+						Eine Zwischentabelle
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_2" value="0" />
+						Zwei Tabellen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_2" value="0" />
+						Ein Attribut
+					</label>
+					<br />
+
+					<p>3) Was wird mit Primärschlüsseln gemacht?</p>
+					<label>
+						<input type="radio" name="q14_3" value="1" />
+						Sie werden übernommen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_3" value="0" />
+						Sie verschwinden
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_3" value="0" />
+						Sie werden zu Fremdschlüsseln
+					</label>
+					<br />
+
+					<p>4) Was entsteht aus Beziehungen 1:n?</p>
+					<label>
+						<input type="radio" name="q14_4" value="1" />
+						Fremdschlüssel
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_4" value="0" />
+						Neue Entität
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_4" value="0" />
+						Zwischentabelle
+					</label>
+					<br />
+
+					<p>
+						5) Welche Information bleibt in beiden Modellen gleich?
+					</p>
+					<label>
+						<input type="radio" name="q14_5" value="1" />
+						Kardinalitäten
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_5" value="0" />
+						Tabellennamen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q14_5" value="0" />
+						Datentypen
+					</label>
+					<br />
+				</form>
+
+				<button onclick="checkQuiz('form14','result14')">
+					Auswerten
+				</button>
+				<p id="result14" class="result hidden"></p>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz15" class="quiz hidden">
+				<h2>G1E – Reverse Engineering</h2>
+				<p>Klicke auf die Karten:</p>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Analyse des logischen Modells
+						</div>
+						<div class="card-face card-back">
+							Tabellen, Schlüssel, Fremdschlüssel und
+							Kardinalitäten untersuchen.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Ableiten von Entitäten
+						</div>
+						<div class="card-face card-back">
+							Jede Tabelle entspricht einer Entität oder
+							Beziehung.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Zwischentabellen erkennen
+						</div>
+						<div class="card-face card-back">
+							Fremdschlüssel-Paare → Hinweis auf n:m-Beziehung.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Attribute finden</div>
+						<div class="card-face card-back">
+							Spalten der Tabelle = Attribute der Entität.
 						</div>
 					</div>
 				</div>
