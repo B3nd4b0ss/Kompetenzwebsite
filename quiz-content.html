@@ -1,0 +1,2305 @@
+<!-- A1G - Formen von Daten beschreiben -->
+<div id="quizA1G" class="quiz hidden">
+	<h2>A1G – Formen von Daten beschreiben</h2>
+	<p>Klicke auf die Karten:</p>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Numerische Daten</div>
+			<div class="card-face card-back">
+				Zahlen, die mathematische Operationen ermöglichen. Beispiele:
+				Alter, Preis, Temperatur.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Textdaten</div>
+			<div class="card-face card-back">
+				Buchstaben, Wörter, Sätze. Beispiele: Name, Adresse, Kommentar.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Mediendaten</div>
+			<div class="card-face card-back">
+				Bilder, Audio, Video. Beispiele: Foto, MP3, Videoaufnahme.
+			</div>
+		</div>
+	</div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- A1F - Speicherungsform unterscheiden -->
+<div id="quizA1F" class="quiz hidden">
+	<h2>A1F – Speicherungsform unterscheiden</h2>
+	<form id="formA1F">
+		<p>1) Welcher Dateityp eignet sich für ein Foto?</p>
+		<label>
+			<input type="radio" name="qA1F_1" value="0" />
+			.txt
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1F_1" value="1" />
+			.jpg
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1F_1" value="0" />
+			.csv
+		</label>
+		<br />
+		<br />
+
+		<p>2) Welcher Dateityp eignet sich für strukturierte Daten?</p>
+		<label>
+			<input type="radio" name="qA1F_2" value="1" />
+			.csv
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1F_2" value="0" />
+			.mp3
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1F_2" value="0" />
+			.png
+		</label>
+		<br />
+		<br />
+
+		<p>3) Welcher Datentyp eignet sich für Wahr/Falsch?</p>
+		<label>
+			<input type="radio" name="qA1F_3" value="1" />
+			Boolean
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1F_3" value="0" />
+			String
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1F_3" value="0" />
+			Integer
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formA1F','resultA1F')">Auswerten</button>
+	<p id="resultA1F" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- A1E - Auswertbarkeit vergleichen -->
+<div id="quizA1E" class="quiz hidden">
+	<h2>A1E – Auswertbarkeit vergleichen</h2>
+	<form id="formA1E">
+		<p>1) Welche Datenform ist am einfachsten statistisch auszuwerten?</p>
+		<label>
+			<input type="radio" name="qA1E_1" value="0" />
+			Freitext in Word
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1E_1" value="1" />
+			Zahlen in Tabelle
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1E_1" value="0" />
+			Bilder in Galerie
+		</label>
+		<br />
+		<br />
+
+		<p>2) Was ermöglicht eine Datenbank im Vergleich zu einer Textdatei?</p>
+		<label>
+			<input type="radio" name="qA1E_2" value="1" />
+			Schnelle Abfragen und Relationen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1E_2" value="0" />
+			Bessere Bildqualität
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qA1E_2" value="0" />
+			Einfacheres Schreiben
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formA1E','resultA1E')">Auswerten</button>
+	<p id="resultA1E" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- B1G - Konsequenz der Struktur -->
+<div id="quizB1G" class="quiz hidden">
+	<h2>B1G – Konsequenz der Struktur</h2>
+	<p>Klicke auf die Karten:</p>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Textstruktur</div>
+			<div class="card-face card-back">
+				Tiefe Auswertbarkeit: Schwer, da unstrukturiert. Manuelle
+				Analyse nötig.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Tabellenstruktur</div>
+			<div class="card-face card-back">
+				Mittlere Auswertbarkeit: Sortieren, Filtern möglich, aber
+				begrenzte Relationen.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Datenbankstruktur</div>
+			<div class="card-face card-back">
+				Hohe Auswertbarkeit: Relationen, komplexe Abfragen, Integrität,
+				Performance.
+			</div>
+		</div>
+	</div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- B1F - Tabelle erstellen -->
+<div id="quizB1F" class="quiz hidden">
+	<h2>B1F – Tabelle erstellen</h2>
+	<p>Erstelle eine Tabelle mit folgenden Funktionen:</p>
+
+	<div class="table-controls">
+		<input type="text" id="new-col" placeholder="Neue Spalte" />
+		<button onclick="addTableColumn()">Spalte hinzufügen</button>
+		<button onclick="addTableRow()">Zeile hinzufügen</button>
+	</div>
+
+	<table id="dynamic-table" border="1">
+		<thead id="table-head">
+			<tr>
+				<th>ID</th>
+				<th>Aktion</th>
+			</tr>
+		</thead>
+		<tbody id="table-body">
+			<tr>
+				<td>1</td>
+				<td><button onclick="deleteRow(0)">×</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button onclick="exportTable()">Tabelle exportieren (JSON)</button>
+	<pre id="table-json" class="result hidden"></pre>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- B1E - Strukturtransformation -->
+<div id="quizB1E" class="quiz hidden">
+	<h2>B1E – Strukturtransformation</h2>
+	<p>
+		Gegeben: Text mit Namen und Alter. Wie transformierst du dies in eine
+		Tabelle?
+	</p>
+	<form id="formB1E">
+		<p>1) Erster Schritt?</p>
+		<label>
+			<input type="radio" name="qB1E_1" value="1" />
+			Spalten definieren: Name, Alter
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qB1E_1" value="0" />
+			Alles in eine Zelle kopieren
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qB1E_1" value="0" />
+			Bilder einfügen
+		</label>
+		<br />
+		<br />
+
+		<p>2) Was ist der Vorteil der Transformation?</p>
+		<label>
+			<input type="radio" name="qB1E_2" value="1" />
+			Bessere Auswertbarkeit und Sortierung
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qB1E_2" value="0" />
+			Schönere Darstellung
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qB1E_2" value="0" />
+			Kleinere Dateigrösse
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formB1E','resultB1E')">Auswerten</button>
+	<p id="resultB1E" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+<!-- C1G - Datentypen erläutern -->
+<div id="quizC1G" class="quiz hidden">
+	<h2>C1G – Datentypen erläutern</h2>
+	<p>Klicke auf die Karten:</p>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Integer</div>
+			<div class="card-face card-back">
+				Ganze Zahlen ohne Nachkommastellen. Beispiele: 42, -7, 0. Für
+				Zähler, Alter, IDs.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Float/Double</div>
+			<div class="card-face card-back">
+				Zahlen mit Nachkommastellen. Beispiele: 3.14, -0.5. Für Preis,
+				Temperatur, Messwerte.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">String</div>
+			<div class="card-face card-back">
+				Text, Zeichenkette. Beispiele: "Hallo", "CH-3000". Für Namen,
+				Adressen, Beschreibungen.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Boolean</div>
+			<div class="card-face card-back">
+				Wahr oder Falsch (true/false). Beispiele: IstVolljährig,
+				HatBestanden. Für Flags, Zustände.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Datum/Zeit</div>
+			<div class="card-face card-back">
+				Datum und Uhrzeit. Beispiele: 2023-12-25, 14:30:00. Für
+				Geburtstage, Zeitstempel.
+			</div>
+		</div>
+	</div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- C1F - Datentyp bestimmen -->
+<div id="quizC1F" class="quiz hidden">
+	<h2>C1F – Datentyp bestimmen</h2>
+	<form id="formC1F">
+		<p>1) Welcher Datentyp ist geeignet für das Alter einer Person?</p>
+		<label>
+			<input type="radio" name="qC1F_1" value="0" />
+			String
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_1" value="1" />
+			Integer
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_1" value="0" />
+			Boolean
+		</label>
+		<br />
+		<br />
+
+		<p>2) Welcher Datentyp passt zu "true/false"?</p>
+		<label>
+			<input type="radio" name="qC1F_2" value="0" />
+			Integer
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_2" value="1" />
+			Boolean
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_2" value="0" />
+			String
+		</label>
+		<br />
+		<br />
+
+		<p>3) Preis in Euro mit Nachkommastellen?</p>
+		<label>
+			<input type="radio" name="qC1F_3" value="1" />
+			Float
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_3" value="0" />
+			Boolean
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_3" value="0" />
+			String
+		</label>
+		<br />
+		<br />
+
+		<p>4) Telefonnummer (z. B. +41 79 123 45 67)?</p>
+		<label>
+			<input type="radio" name="qC1F_4" value="0" />
+			Integer
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_4" value="1" />
+			String
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_4" value="0" />
+			Float
+		</label>
+		<br />
+		<br />
+
+		<p>5) Name einer Person?</p>
+		<label>
+			<input type="radio" name="qC1F_5" value="1" />
+			String
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_5" value="0" />
+			Boolean
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1F_5" value="0" />
+			Float
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formC1F','resultC1F')">Auswerten</button>
+	<p id="resultC1F" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- C1E - Datentyp transformieren (Quiz) -->
+<div id="quizC1E" class="quiz hidden">
+	<h2>C1E – Datentyp transformieren (Quiz)</h2>
+	<form id="formC1E">
+		<p>1) Zahl 42 in String umwandeln?</p>
+		<label>
+			<input type="radio" name="qC1E_1" value="1" />
+			String(42)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_1" value="0" />
+			parseInt("42")
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_1" value="0" />
+			Number(42)
+		</label>
+		<br />
+		<br />
+
+		<p>2) String "123" in Zahl?</p>
+		<label>
+			<input type="radio" name="qC1E_2" value="1" />
+			Number("123")
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_2" value="0" />
+			String("123")
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_2" value="0" />
+			Boolean("123")
+		</label>
+		<br />
+		<br />
+
+		<p>3) Zahl 0 in Boolean?</p>
+		<label>
+			<input type="radio" name="qC1E_3" value="1" />
+			Boolean(0)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_3" value="0" />
+			Number(0)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_3" value="0" />
+			String(0)
+		</label>
+		<br />
+		<br />
+
+		<p>4) Zahl 3.14 in Ganzzahl?</p>
+		<label>
+			<input type="radio" name="qC1E_4" value="1" />
+			parseInt(3.14)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_4" value="0" />
+			String(3.14)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_4" value="0" />
+			Boolean(3.14)
+		</label>
+		<br />
+		<br />
+
+		<p>5) Boolean true in String?</p>
+		<label>
+			<input type="radio" name="qC1E_5" value="1" />
+			String(true)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_5" value="0" />
+			Number(true)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC1E_5" value="0" />
+			parseInt(true)
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formC1E','resultC1E')">Auswerten</button>
+	<p id="resultC1E" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- C1E2 - Datentyp transformieren (Umwandlung) -->
+<div id="quizC1E2" class="quiz hidden">
+	<h2>C1E – Datentyp transformieren (Umwandlung)</h2>
+	<p>
+		Gib einen Wert ein, wähle den gewünschten Datentyp und klicke auf
+		"Umwandeln":
+	</p>
+
+	<input type="text" id="inputValue" placeholder="Wert eingeben" />
+	<select id="targetType">
+		<option value="int">Integer</option>
+		<option value="float">Float</option>
+		<option value="string">String</option>
+		<option value="boolean">Boolean</option>
+	</select>
+	<button onclick="convertValue()">Umwandeln</button>
+
+	<p id="conversionResult" class="result hidden"></p>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- C2G - Skalentyp erläutern -->
+<div id="quizC2G" class="quiz hidden">
+	<h2>C2G – Skalentyp erläutern (Flashcards)</h2>
+	<p>Klicke auf die Karten, um die Begründung zu sehen:</p>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Nominalskala</div>
+			<div class="card-face card-back">
+				<ul>
+					<li>
+						Was sie ist: Eine Skala, die nur Gleichheit oder
+						Ungleichheit von Merkmalen ausdrückt und keine Rangfolge
+						zulässt.
+					</li>
+					<li>Beispiele: Geschlecht, Blutgruppen, Telefonnummern.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Ordinalskala</div>
+			<div class="card-face card-back">
+				<ul>
+					<li>
+						Was sie ist: Eine Skala, die eine Rangordnung der
+						Merkmale zulässt, aber keine genauen Abstände zwischen
+						den Werten angibt.
+					</li>
+					<li>
+						Beispiele: Schulnoten, Platzierungen in einem Wettkampf.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Intervallskala</div>
+			<div class="card-face card-back">
+				<ul>
+					<li>
+						Eine Skala, bei der die Abstände zwischen den Zahlen
+						bedeutsam sind und als gleich angesehen werden. Sie
+						besitzt jedoch keinen natürlichen Nullpunkt, wodurch
+						Verhältnisse nicht sinnvoll gebildet werden können.
+					</li>
+					<li>Beispiele: Temperatur in °C, IQ-Werte.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Verhältnisskala</div>
+			<div class="card-face card-back">
+				<ul>
+					<li>
+						Was sie ist: Die höchste Skalenstufe, die einen
+						natürlichen Nullpunkt besitzt. Sowohl die Abstände als
+						auch die Verhältnisse zwischen Zahlen haben eine
+						sinnvolle Bedeutung.
+					</li>
+					<li>
+						Beispiele: Länge, Gewicht, Absolute Temperatur (Kelvin).
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- C2F - Skalentyp anwenden -->
+<div id="quizC2F" class="quiz hidden">
+	<h2>C2F – Skalentyp anwenden</h2>
+	<form id="formC2F">
+		<p>1) Blutgruppen (A, B, AB, 0)?</p>
+		<label>
+			<input type="radio" name="qC2F_1" value="1" />
+			Nominalskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_1" value="0" />
+			Ordinalskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_1" value="0" />
+			Intervallskala
+		</label>
+		<br />
+		<br />
+
+		<p>2) Schulnoten (1–6)?</p>
+		<label>
+			<input type="radio" name="qC2F_2" value="0" />
+			Nominalskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_2" value="1" />
+			Ordinalskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_2" value="0" />
+			Intervallskala
+		</label>
+		<br />
+		<br />
+
+		<p>3) Temperatur in °C?</p>
+		<label>
+			<input type="radio" name="qC2F_3" value="1" />
+			Intervallskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_3" value="0" />
+			Verhältnisskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_3" value="0" />
+			Ordinalskala
+		</label>
+		<br />
+		<br />
+
+		<p>4) Gewicht in kg?</p>
+		<label>
+			<input type="radio" name="qC2F_4" value="0" />
+			Nominalskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_4" value="1" />
+			Verhältnisskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_4" value="0" />
+			Ordinalskala
+		</label>
+		<br />
+		<br />
+
+		<p>5) Postleitzahl?</p>
+		<label>
+			<input type="radio" name="qC2F_5" value="1" />
+			Nominalskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_5" value="0" />
+			Ordinalskala
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qC2F_5" value="0" />
+			Verhältnisskala
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formC2F','resultC2F')">Auswerten</button>
+	<p id="resultC2F" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- C2E - Skalentyp auswählen -->
+<div id="quizC2E" class="quiz hidden">
+	<h2>C2E – Skalentyp auswählen (Flashcards)</h2>
+	<p>Klicke auf die Karten, um die Begründung zu sehen:</p>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Temperatur in °C</div>
+			<div class="card-face card-back">
+				Intervallskala: Nullpunkt ist willkürlich
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Alter in Jahren</div>
+			<div class="card-face card-back">
+				Verhältnisskala: natürlicher Nullpunkt
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Schulnoten (1–6)</div>
+			<div class="card-face card-back">
+				Ordinalskala: Reihenfolge, Abstände ungleich
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Haarfarbe</div>
+			<div class="card-face card-back">
+				Nominalskala: Kategorien ohne Ordnung
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Einkommen in CHF</div>
+			<div class="card-face card-back">
+				Verhältnisskala: sinnvoller Nullpunkt
+			</div>
+		</div>
+	</div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- D1G - Diagrammtypen auswählen -->
+<div id="quizD1G" class="quiz hidden">
+	<h2>D1G – Diagrammtypen auswählen</h2>
+	<form id="formD1G">
+		<p>1) Welcher Diagrammtyp eignet sich für Anteile eines Ganzen?</p>
+		<label>
+			<input type="radio" name="qD1G_1" value="1" />
+			Kreisdiagramm
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1G_1" value="0" />
+			Liniendiagramm
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1G_1" value="0" />
+			Streudiagramm
+		</label>
+		<br />
+		<br />
+
+		<p>2) Welcher Diagrammtyp eignet sich für Zeitverläufe?</p>
+		<label>
+			<input type="radio" name="qD1G_2" value="0" />
+			Balkendiagramm
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1G_2" value="1" />
+			Liniendiagramm
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1G_2" value="0" />
+			Netzdiagramm
+		</label>
+		<br />
+		<br />
+
+		<p>3) Welcher Diagrammtyp eignet sich für Kategorienvergleich?</p>
+		<label>
+			<input type="radio" name="qD1G_3" value="1" />
+			Balkendiagramm
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1G_3" value="0" />
+			Kreisdiagramm
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1G_3" value="0" />
+			Liniendiagramm
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formD1G','resultD1G')">Auswerten</button>
+	<p id="resultD1G" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- D1F - Diagramm erstellen -->
+<div id="quizD1F" class="quiz hidden">
+	<h2>D1F – Diagramm erstellen</h2>
+	<div class="chart-builder">
+		<p>Gib Daten im CSV-Format ein (Kategorie,Wert):</p>
+		<textarea id="chart-data" rows="6">
+Kategorie,Wert
+Mathe,85
+Deutsch,92
+Englisch,78
+Informatik,95
+Biologie,88
+        </textarea>
+
+		<div class="chart-controls">
+			<label>Diagrammtyp:</label>
+			<select id="chart-type">
+				<option value="bar">Balkendiagramm</option>
+				<option value="line">Liniendiagramm</option>
+				<option value="pie">Kreisdiagramm</option>
+			</select>
+			<button onclick="renderChart()">Diagramm generieren</button>
+		</div>
+
+		<div style="width: 100%; height: 300px; margin: 20px 0">
+			<canvas id="chart-canvas"></canvas>
+		</div>
+	</div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- D1E - Tendenzen ableiten -->
+<div id="quizD1E" class="quiz hidden">
+	<h2>D1E – Tendenzen ableiten</h2>
+	<form id="formD1E">
+		<p>Gegeben: Umsatzentwicklung über 5 Jahre steigend.</p>
+		<p>1) Welche Tendenz zeigt sich?</p>
+		<label>
+			<input type="radio" name="qD1E_1" value="1" />
+			Positiver Trend
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1E_1" value="0" />
+			Negativer Trend
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1E_1" value="0" />
+			Kein Trend
+		</label>
+		<br />
+		<br />
+
+		<p>2) Was könnte eine mögliche Ursache sein?</p>
+		<label>
+			<input type="radio" name="qD1E_2" value="1" />
+			Erfolgreiche Marketingkampagne
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1E_2" value="0" />
+			Schlechte Produktqualität
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD1E_2" value="0" />
+			Gleichbleibende Kundenanzahl
+		</label>
+		<br />
+		<br />
+	</form>
+	<button onclick="checkQuiz('formD1E','resultD1E')">Auswerten</button>
+	<p id="resultD1E" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- D2G - Statistische Kenngrössen erläutern -->
+<div id="quizD2G" class="quiz hidden">
+	<h2>D2G – Statistische Kenngrössen erläutern</h2>
+	<p>Klicke auf die Karten, um die Beschreibung zu sehen:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Minimum</div>
+			<div class="card-face card-back">
+				Kleinster vorkommender Wert in den Daten.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Maximum</div>
+			<div class="card-face card-back">
+				Grösster vorkommender Wert in den Daten.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Mittelwert</div>
+			<div class="card-face card-back">
+				Durchschnitt aller Werte. Benötigt metrische Skalen.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Median</div>
+			<div class="card-face card-back">
+				Wert genau in der Mitte aller sortierten Daten.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Voraussetzungen</div>
+			<div class="card-face card-back">
+				Skalentyp, Datenqualität, genügend Beobachtungen.
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- D2F - Statistik erstellen -->
+<div id="quizD2F" class="quiz hidden">
+	<h2>D2F – Statistik erstellen</h2>
+	<form id="formD2F">
+		<p>1) Welche Kenngrösse eignet sich NICHT für Ordinalskalen?</p>
+		<label>
+			<input type="radio" name="qD2F_1" value="0" />
+			Median
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_1" value="1" />
+			Mittelwert
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_1" value="0" />
+			Minimum
+		</label>
+		<br />
+		<br />
+
+		<p>2) Welche Skala benötigst du zwingend für den Mittelwert?</p>
+		<label>
+			<input type="radio" name="qD2F_2" value="1" />
+			Intervall/Verhältnis
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_2" value="0" />
+			Ordinal
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_2" value="0" />
+			Nominal
+		</label>
+		<br />
+		<br />
+
+		<p>3) Du hast Einkommen (CHF). Welche Kenngrössen sind sinnvoll?</p>
+		<label>
+			<input type="radio" name="qD2F_3" value="1" />
+			Mittelwert, Median, Minimum, Maximum
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_3" value="0" />
+			Nur Kategorien zählen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_3" value="0" />
+			Nur Rangfolge bilden
+		</label>
+		<br />
+		<br />
+
+		<p>4) Welche Voraussetzung ist wichtig für gute Statistiken?</p>
+		<label>
+			<input type="radio" name="qD2F_4" value="1" />
+			Hohe Datenqualität
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_4" value="0" />
+			Wenige Beobachtungen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_4" value="0" />
+			Beliebige Skalentypen mischen
+		</label>
+		<br />
+		<br />
+
+		<p>5) Du misst Temperaturen in °C. Welche Art Statistik ist möglich?</p>
+		<label>
+			<input type="radio" name="qD2F_5" value="1" />
+			Intervallstatistik (Mittelwert erlaubt)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_5" value="0" />
+			Verhältnisse bilden
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qD2F_5" value="0" />
+			Nur Rangfolge
+		</label>
+		<br />
+		<br />
+	</form>
+
+	<button onclick="checkQuiz('formD2F','resultD2F')">Auswerten</button>
+	<p id="resultD2F" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- D2E - Statistik kritisch hinterfragen -->
+<div id="quizD2E" class="quiz hidden">
+	<h2>D2E – Statistik kritisch hinterfragen</h2>
+	<p>Klicke auf die Karten, um Beispiele für Kritikpunkte zu sehen:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Unpassender Skalentyp</div>
+			<div class="card-face card-back">
+				Mittelwert für Ordinalskalen ist problematisch.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Ausreisser</div>
+			<div class="card-face card-back">
+				Ausreisser können den Mittelwert stark verzerren.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Stichprobengrösse</div>
+			<div class="card-face card-back">
+				Zu wenige Beobachtungen → keine zuverlässige Statistik.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Datenqualität</div>
+			<div class="card-face card-back">
+				Fehlerhafte oder fehlende Werte beeinflussen das Resultat.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Interpretation</div>
+			<div class="card-face card-back">Korrelation ≠ Kausalität.</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+<!-- E1G - Datenschutz in Statistiken -->
+<div id="quizE1G" class="quiz hidden">
+	<h2>E1G – Datenschutz in Statistiken</h2>
+	<p>Klicke auf die Karten, um wichtige Datenschutz-Themen zu sehen:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Personenbezogene Daten</div>
+			<div class="card-face card-back">
+				Darf nicht ohne Einwilligung verwendet oder weitergegeben
+				werden.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Anonymisierung</div>
+			<div class="card-face card-back">
+				Persönliche Bezüge müssen vollständig entfernt werden.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Datenminimierung</div>
+			<div class="card-face card-back">
+				Nur die wirklich benötigten Daten dürfen erhoben werden.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Weitergabe</div>
+			<div class="card-face card-back">
+				Weitergabe nur mit Rechtsgrundlage oder Einwilligung.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Risiken</div>
+			<div class="card-face card-back">
+				Re-Identifikation möglich, wenn zu viele Details vorhanden sind.
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- F1G - Elemente konzeptionelles Modell -->
+<div id="quizF1G" class="quiz hidden">
+	<h2>F1G – Elemente konzeptionelles Modell</h2>
+	<p>Klicke auf die Karten:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Entitätstyp</div>
+			<div class="card-face card-back">
+				Klasse von Objekten mit gleichen Eigenschaften. Beispiel:
+				Person, Auto, Bestellung.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Attribut</div>
+			<div class="card-face card-back">
+				Eigenschaft einer Entität. Beispiel: Name, Alter, Preis.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Assoziation</div>
+			<div class="card-face card-back">
+				Beziehung zwischen Entitäten. Beispiel: Person besucht Kurs.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Kardinalität</div>
+			<div class="card-face card-back">
+				Anzahlbeziehung: 1:1, 1:n, n:m. Beispiel: Ein Kurs hat viele
+				Teilnehmer.
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- F1F - Konzeptionelles Modell erstellen -->
+<div id="quizF1F" class="quiz hidden">
+	<h2>F1F – Konzeptionelles Modell erstellen</h2>
+	<p>Ziehe die Attribute den passenden Entitäten zu:</p>
+
+	<p>Ziehe die Attribute den Entitäten zu:</p>
+	<div id="f1f-container">
+		<div class="entity" id="entity1" data-entity="Person">
+			<div class="entity-header">Person</div>
+			<div class="entity-attributes" id="attrs1"></div>
+		</div>
+		<div class="entity" id="entity2" data-entity="Kurs">
+			<div class="entity-header">Kurs</div>
+			<div class="entity-attributes" id="attrs2"></div>
+		</div>
+		<div class="attribute-pool">
+			<div
+				class="attribute"
+				draggable="true"
+				id="attr1"
+				data-entity="Person">
+				Name
+			</div>
+			<div
+				class="attribute"
+				draggable="true"
+				id="attr2"
+				data-entity="Person">
+				Matrikelnummer
+			</div>
+			<div
+				class="attribute"
+				draggable="true"
+				id="attr3"
+				data-entity="Kurs">
+				Kursname
+			</div>
+			<div
+				class="attribute"
+				draggable="true"
+				id="attr4"
+				data-entity="Kurs">
+				Kursnummer
+			</div>
+			<div
+				class="attribute"
+				draggable="true"
+				id="attr5"
+				data-entity="Person">
+				Alter
+			</div>
+			<div
+				class="attribute"
+				draggable="true"
+				id="attr6"
+				data-entity="Kurs">
+				Credits
+			</div>
+		</div>
+	</div>
+	<button onclick="checkF1F()">Überprüfen</button>
+	<button onclick="resetF1F()">Zurücksetzen</button>
+	<div id="resultF1F" class="result hidden"></div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- F1E - Konzeptionelles Modell überprüfen -->
+<div id="quizF1E" class="quiz hidden">
+	<h2>F1E – Konzeptionelles Modell überprüfen</h2>
+
+	<div class="model-review">
+		<h3>Aufgabe 1: Modellvalidierung</h3>
+		<p>Überprüfe das folgende konzeptionelle Modell auf Fehler:</p>
+
+		<div class="model-diagram">
+			<div class="entity-diagram">
+				<div class="entity-box">
+					<div class="entity-header">Bestellung</div>
+					<div class="entity-attributes">
+						<div>Bestellnummer</div>
+						<div>Datum</div>
+						<div>Kundenname</div>
+						<div>Kundenadresse</div>
+						<div>Artikel1</div>
+						<div>Artikel2</div>
+						<div>Artikel3</div>
+						<div>Gesamtpreis</div>
+					</div>
+				</div>
+				<div class="entity-box">
+					<div class="entity-header">Kunde</div>
+					<div class="entity-attributes">
+						<div>KundenID</div>
+						<div>Name</div>
+						<div>Adresse</div>
+					</div>
+				</div>
+				<div class="relationship">1:n</div>
+			</div>
+		</div>
+
+		<form id="formF1E">
+			<h4>Welche Probleme siehst du in diesem Modell?</h4>
+			<label>
+				<input type="checkbox" name="qF1E_1" value="1" />
+				Wiederholungsgruppen (Artikel1, Artikel2, Artikel3)
+			</label>
+			<br />
+			<label>
+				<input type="checkbox" name="qF1E_2" value="1" />
+				Redundante Daten (Kundenadresse in Bestellung und Kunde)
+			</label>
+			<br />
+			<label>
+				<input type="checkbox" name="qF1E_3" value="1" />
+				Berechnetes Attribut (Gesamtpreis sollte nicht gespeichert
+				werden)
+			</label>
+			<br />
+			<label>
+				<input type="checkbox" name="qF1E_4" value="0" />
+				Zu wenige Entitäten
+			</label>
+			<br />
+
+			<h4>Multiple-Choice Fragen:</h4>
+			<p>1) Ein Attribut darf mehrfach in einer Entität vorkommen?</p>
+			<label>
+				<input type="radio" name="qF1E_5" value="0" />
+				Nein, nie
+			</label>
+			<br />
+			<label>
+				<input type="radio" name="qF1E_5" value="1" />
+				Ja, wenn unterschiedliche Bedeutungen
+			</label>
+			<br />
+			<label>
+				<input type="radio" name="qF1E_5" value="0" />
+				Ja, immer erlaubt
+			</label>
+			<br />
+			<br />
+
+			<p>2) Eine Entität muss mindestens ein Attribut haben?</p>
+			<label>
+				<input type="radio" name="qF1E_6" value="1" />
+				Ja
+			</label>
+			<br />
+			<label>
+				<input type="radio" name="qF1E_6" value="0" />
+				Nein
+			</label>
+			<br />
+			<br />
+
+			<p>
+				3) Welche Kardinalität ist für "Kunde bestellt Produkt" am
+				realistischsten?
+			</p>
+			<label>
+				<input type="radio" name="qF1E_7" value="0" />
+				1:1
+			</label>
+			<br />
+			<label>
+				<input type="radio" name="qF1E_7" value="1" />
+				1:n
+			</label>
+			<br />
+			<label>
+				<input type="radio" name="qF1E_7" value="0" />
+				n:m
+			</label>
+			<br />
+		</form>
+
+		<button onclick="checkQuiz('formF1E','resultF1E')">
+			Komplett auswerten
+		</button>
+		<button onclick="resetF1E()">Zurücksetzen</button>
+		<div id="resultF1E" class="result hidden"></div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+<!-- G1G - Konzeptionelles vs. logisches Modell -->
+<div id="quizG1G" class="quiz hidden">
+	<h2>G1G – Konzeptionelles vs. logisches Modell</h2>
+	<p>Klicke auf die Karten:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Konzeptionelles Modell</div>
+			<div class="card-face card-back">
+				Beschreibt die Realität verständlich.
+				<br />
+				Entitäten, Attribute, Kardinalitäten.
+				<br />
+				Technologieunabhängig.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Logisches Modell</div>
+			<div class="card-face card-back">
+				Umsetzung für relationale DB.
+				<br />
+				Tabellen, Primärschlüssel, Fremdschlüssel, Zwischentabellen.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Hauptunterschied</div>
+			<div class="card-face card-back">
+				Konzeptionell = Fachsicht
+				<br />
+				Logisch = Datenbanksicht
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- G1F - Konzeptionelles → Logisches Modell -->
+<div id="quizG1F" class="quiz hidden">
+	<h2>G1F – Konzeptionelles → Logisches Modell</h2>
+	<form id="formG1F">
+		<p>1) Was wird beim Übergang erzeugt?</p>
+		<label>
+			<input type="radio" name="qG1F_1" value="1" />
+			Tabellen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_1" value="0" />
+			Dateien
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_1" value="0" />
+			Graphen
+		</label>
+		<br />
+		<br />
+
+		<p>2) Was wird aus einer n:m-Beziehung?</p>
+		<label>
+			<input type="radio" name="qG1F_2" value="1" />
+			Eine Zwischentabelle
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_2" value="0" />
+			Zwei Tabellen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_2" value="0" />
+			Ein Attribut
+		</label>
+		<br />
+		<br />
+
+		<p>3) Was wird mit Primärschlüsseln gemacht?</p>
+		<label>
+			<input type="radio" name="qG1F_3" value="1" />
+			Sie werden übernommen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_3" value="0" />
+			Sie verschwinden
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_3" value="0" />
+			Sie werden zu Fremdschlüsseln
+		</label>
+		<br />
+		<br />
+
+		<p>4) Was entsteht aus Beziehungen 1:n?</p>
+		<label>
+			<input type="radio" name="qG1F_4" value="1" />
+			Fremdschlüssel
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_4" value="0" />
+			Neue Entität
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_4" value="0" />
+			Zwischentabelle
+		</label>
+		<br />
+		<br />
+
+		<p>5) Welche Information bleibt in beiden Modellen gleich?</p>
+		<label>
+			<input type="radio" name="qG1F_5" value="1" />
+			Kardinalitäten
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_5" value="0" />
+			Tabellennamen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qG1F_5" value="0" />
+			Datentypen
+		</label>
+		<br />
+		<br />
+	</form>
+
+	<button onclick="checkQuiz('formG1F','resultG1F')">Auswerten</button>
+	<p id="resultG1F" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- G1E - Reverse Engineering -->
+<div id="quizG1E" class="quiz hidden">
+	<h2>G1E – Reverse Engineering</h2>
+	<p>Klicke auf die Karten:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">
+				Analyse des logischen Modells
+			</div>
+			<div class="card-face card-back">
+				Tabellen, Schlüssel, Fremdschlüssel und Kardinalitäten
+				untersuchen.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Ableiten von Entitäten</div>
+			<div class="card-face card-back">
+				Jede Tabelle entspricht einer Entität oder Beziehung.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Zwischentabellen erkennen</div>
+			<div class="card-face card-back">
+				Fremdschlüssel-Paare → Hinweis auf n:m-Beziehung.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Attribute finden</div>
+			<div class="card-face card-back">
+				Spalten der Tabelle = Attribute der Entität.
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- H1G - Eigenschaften von Schlüsseln -->
+<div id="quizH1G" class="quiz hidden">
+	<h2>H1G – Eigenschaften von Schlüsseln</h2>
+	<p>Klicke auf die Karten:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Eindeutigkeit</div>
+			<div class="card-face card-back">
+				Jeder Schlüsselwert identifiziert genau ein Objekt.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Definiertheit</div>
+			<div class="card-face card-back">
+				Schlüsselwert darf nicht NULL sein.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Minimalität</div>
+			<div class="card-face card-back">
+				So wenige Attribute wie nötig.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Stabilität</div>
+			<div class="card-face card-back">
+				Schlüsselwert ändert sich nicht über Zeit.
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- H1F - Schlüssel auswählen -->
+<div id="quizH1F" class="quiz hidden">
+	<h2>H1F – Schlüssel auswählen</h2>
+	<p>Klicke auf die Karten:</p>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Einfacher Schlüssel</div>
+			<div class="card-face card-back">
+				Ein einziges Attribut identifiziert eindeutig eine Entität.
+				<br />
+				Beispiel: AHV-Nummer, Matrikelnummer.
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Zusammengesetzter Schlüssel</div>
+			<div class="card-face card-back">
+				Eine Kombination aus mehreren Attributen ist eindeutig.
+				<br />
+				Beispiel: (Kursnummer, Semester), (Vorname, Name, Geburtsdatum).
+			</div>
+		</div>
+	</div>
+
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">Künstlicher Schlüssel</div>
+			<div class="card-face card-back">
+				Ein künstlich erzeugter, eindeutiger Schlüssel.
+				<br />
+				Beispiel: Auto-Increment ID, UUID.
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- H1E - Schlüsselkandidaten analysieren -->
+<div id="quizH1E" class="quiz hidden">
+	<h2>H1E – Schlüsselkandidaten analysieren</h2>
+	<form id="formH1E">
+		<p>1) Welche Eigenschaft sollte ein Schlüssel NICHT haben?</p>
+		<label>
+			<input type="radio" name="qH1E_1" value="0" />
+			Eindeutig
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_1" value="0" />
+			Unveränderlich
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_1" value="1" />
+			Datenschutzkritisch
+		</label>
+		<br />
+		<br />
+
+		<p>2) Warum ist die alte AHV-Nummer als Schlüssel ungeeignet?</p>
+		<label>
+			<input type="radio" name="qH1E_2" value="1" />
+			Sie enthält persönliche Informationen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_2" value="0" />
+			Sie ist nicht eindeutig
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_2" value="0" />
+			Sie ist zu kurz
+		</label>
+		<br />
+		<br />
+
+		<p>3) Warum ist eine 8-stellige Artikelnummer problematisch?</p>
+		<label>
+			<input type="radio" name="qH1E_3" value="1" />
+			Kann sich ändern (Sortimentwechsel)
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_3" value="0" />
+			Zu lang
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_3" value="0" />
+			Doppelt erlaubt
+		</label>
+		<br />
+		<br />
+
+		<p>4) Warum eignet sich die IPv4-Adresse schlecht als Schlüssel?</p>
+		<label>
+			<input type="radio" name="qH1E_4" value="1" />
+			Sie kann sich häufig ändern
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_4" value="0" />
+			Sie ist nicht eindeutig
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_4" value="0" />
+			Sie ist zu komplex
+		</label>
+		<br />
+		<br />
+
+		<p>5) Welche Aussage zu künstlichen Schlüsseln stimmt?</p>
+		<label>
+			<input type="radio" name="qH1E_5" value="1" />
+			Sie sind stabil und ändern sich nie
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_5" value="0" />
+			Sie enthalten Fachinformationen
+		</label>
+		<br />
+		<label>
+			<input type="radio" name="qH1E_5" value="0" />
+			Sie sind schwer zu erzeugen
+		</label>
+		<br />
+		<br />
+	</form>
+
+	<button onclick="checkQuiz('formH1E','resultH1E')">Auswerten</button>
+	<p id="resultH1E" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+<!-- I1G - Ziel der Normalisierung -->
+<div id="quizI1G" class="quiz hidden">
+	<h2>I1G – Ziel der Normalisierung</h2>
+	<p>Klicke auf die Karten, um die Erklärung zu sehen:</p>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">1. Normalform (1NF)</div>
+			<div class="card-face card-back">
+				Keine Wiederholgruppen, jedes Attribut atomar.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">2. Normalform (2NF)</div>
+			<div class="card-face card-back">
+				Jedes Nicht-Schlüsselattribut hängt voll vom Primärschlüssel ab.
+			</div>
+		</div>
+	</div>
+	<div class="flashcard" onclick="flip(this)">
+		<div class="card">
+			<div class="card-face card-front">3. Normalform (3NF)</div>
+			<div class="card-face card-back">
+				Nicht-Schlüsselattribute hängen nicht transitiv vom Schlüssel
+				ab.
+			</div>
+		</div>
+	</div>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- I1F - Normalisierung anwenden -->
+<div id="quizI1F" class="quiz hidden">
+	<h2>I1F – Normalisierung anwenden</h2>
+
+	<div class="normalization-exercise">
+		<h3>Aufgabe: Normalisiere folgende Tabelle</h3>
+
+		<div class="original-table">
+			<h4>Originaltabelle "Bestellungen":</h4>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>BestellNr</th>
+						<th>KundenName</th>
+						<th>KundenAdresse</th>
+						<th>ArtikelNr</th>
+						<th>ArtikelName</th>
+						<th>Menge</th>
+						<th>Preis</th>
+						<th>Lieferant</th>
+						<th>LieferantTel</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>B1001</td>
+						<td>Max Mustermann</td>
+						<td>Musterstrasse 1, 3000 Bern</td>
+						<td>A001, A002</td>
+						<td>Tisch, Stuhl</td>
+						<td>2, 4</td>
+						<td>200, 400</td>
+						<td>Möbel AG, Holz GmbH</td>
+						<td>031 123 45 67, 031 987 65 43</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="normalization-steps">
+			<h4>1. Normalform (1NF) - Wähle die Probleme:</h4>
+			<div class="checkbox-group">
+				<label>
+					<input type="checkbox" name="1nf1" value="1" />
+					Mehrfachwerte in einer Zelle (ArtikelNr)
+				</label>
+				<br />
+				<label>
+					<input type="checkbox" name="1nf2" value="1" />
+					Mehrfachwerte in einer Zelle (ArtikelName)
+				</label>
+				<br />
+				<label>
+					<input type="checkbox" name="1nf3" value="1" />
+					Nicht-atomare Attribute
+				</label>
+				<br />
+				<label>
+					<input type="checkbox" name="1nf4" value="0" />
+					Fehlender Primärschlüssel
+				</label>
+			</div>
+
+			<h4>2. Normalform (2NF) - Welche Abhängigkeiten existieren?</h4>
+			<div class="dependency-check">
+				<p>Prüfe für jedes Attribut:</p>
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Attribut</th>
+							<th>Voll funktional abhängig von BestellNr?</th>
+							<th>Erklärung</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>KundenName</td>
+							<td>
+								<select name="2nf_kundenname">
+									<option value="0">Ja</option>
+									<option value="1">Nein</option>
+								</select>
+							</td>
+							<td>
+								<small>
+									Hängt von Kunde ab, nicht von Bestellung
+								</small>
+							</td>
+						</tr>
+						<tr>
+							<td>ArtikelName</td>
+							<td>
+								<select name="2nf_artikelname">
+									<option value="0">Ja</option>
+									<option value="1">Nein</option>
+								</select>
+							</td>
+							<td><small>Hängt von Artikel ab</small></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h4>3. Normalform (3NF) - Transitive Abhängigkeiten finden:</h4>
+			<div class="transitive-deps">
+				<p>Welche transitiven Abhängigkeiten existieren?</p>
+				<label>
+					<input type="checkbox" name="3nf1" value="1" />
+					LieferantTel → Lieferant
+				</label>
+				<br />
+				<label>
+					<input type="checkbox" name="3nf2" value="1" />
+					ArtikelName → ArtikelNr
+				</label>
+				<br />
+				<label>
+					<input type="checkbox" name="3nf3" value="0" />
+					BestellNr → KundenName
+				</label>
+			</div>
+		</div>
+
+		<button onclick="checkNormalization()">
+			Normalisierung überprüfen
+		</button>
+		<button onclick="showNormalizedSolution()">Lösung anzeigen</button>
+		<div id="resultI1F" class="result hidden"></div>
+
+		<div id="normalizedSolution" class="hidden">
+			<h4>Normalisierte Tabellen:</h4>
+			<div class="table-container">
+				<table border="1">
+					<caption>Bestellung</caption>
+					<tr>
+						<th>BestellNr</th>
+						<th>KundenID</th>
+						<th>Datum</th>
+					</tr>
+				</table>
+				<table border="1">
+					<caption>Kunde</caption>
+					<tr>
+						<th>KundenID</th>
+						<th>Name</th>
+						<th>Adresse</th>
+					</tr>
+				</table>
+				<table border="1">
+					<caption>BestellPosition</caption>
+					<tr>
+						<th>BestellNr</th>
+						<th>ArtikelNr</th>
+						<th>Menge</th>
+					</tr>
+				</table>
+				<table border="1">
+					<caption>Artikel</caption>
+					<tr>
+						<th>ArtikelNr</th>
+						<th>Name</th>
+						<th>Preis</th>
+						<th>LieferantID</th>
+					</tr>
+				</table>
+				<table border="1">
+					<caption>Lieferant</caption>
+					<tr>
+						<th>LieferantID</th>
+						<th>Name</th>
+						<th>Telefon</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- I1E - Normalisierung kritisch hinterfragen -->
+<div id="quizI1E" class="quiz hidden">
+	<h2>I1E – Normalisierung kritisch hinterfragen</h2>
+
+	<div class="critical-analysis">
+		<h3>Fallstudie: E-Commerce System</h3>
+
+		<div class="scenario">
+			<h4>Szenario 1: Übernormalisierung</h4>
+			<p>
+				Ein System hat 50 Tabellen für nur 1000 Datensätze. Jede Abfrage
+				benötigt 10+ JOINs.
+			</p>
+
+			<div class="interactive-question">
+				<p>Welche Auswirkungen hat dies?</p>
+				<div class="impact-check">
+					<label>
+						<input type="checkbox" name="impact1" value="1" />
+						Langsame Performance
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="impact2" value="1" />
+						Komplexe Abfragen
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="impact3" value="1" />
+						Hohe Wartungskosten
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="impact4" value="0" />
+						Bessere Datenintegrität
+					</label>
+				</div>
+
+				<p>Lösungsvorschlag:</p>
+				<select id="solution1">
+					<option value="">-- Auswählen --</option>
+					<option value="1">
+						Einige Tabellen zusammenführen (Denormalisierung)
+					</option>
+					<option value="0">Weiter normalisieren</option>
+					<option value="0">Mehr Indizes hinzufügen</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="scenario">
+			<h4>Szenario 2: Keine Normalisierung</h4>
+			<p>Alle Daten in einer großen Tabelle mit vielen Redundanzen.</p>
+
+			<div class="interactive-question">
+				<p>Welche Probleme treten auf?</p>
+				<div class="problem-check">
+					<label>
+						<input type="checkbox" name="problem1" value="1" />
+						Dateninkonsistenzen
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="problem2" value="1" />
+						Hoher Speicherverbrauch
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="problem3" value="1" />
+						Update-Anomalien
+					</label>
+					<br />
+					<label>
+						<input type="checkbox" name="problem4" value="0" />
+						Schnelle Abfragen
+					</label>
+				</div>
+
+				<p>Wie viel Normalisierung ist optimal?</p>
+				<div class="slider-container">
+					<p>
+						Normalisierungsgrad:
+						<span id="normalizationLevel">3NF</span>
+					</p>
+					<input
+						type="range"
+						min="0"
+						max="5"
+						value="3"
+						class="slider"
+						id="normalizationSlider" />
+					<div class="slider-labels">
+						<span>Keine NF</span>
+						<span>1NF</span>
+						<span>2NF</span>
+						<span>3NF</span>
+						<span>BCNF</span>
+						<span>4NF</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tradeoff-analysis">
+			<h4>Abwägung: Performance vs. Datenintegrität</h4>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Aspekt</th>
+						<th>Normalisiert</th>
+						<th>Denormalisiert</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Datenkonsistenz</td>
+						<td><span class="good">✓ Hoch</span></td>
+						<td><span class="bad">✗ Niedrig</span></td>
+					</tr>
+					<tr>
+						<td>Abfrage-Performance</td>
+						<td><span class="bad">✗ Langsam</span></td>
+						<td><span class="good">✓ Schnell</span></td>
+					</tr>
+					<tr>
+						<td>Speicherbedarf</td>
+						<td><span class="good">✓ Gering</span></td>
+						<td><span class="bad">✗ Hoch</span></td>
+					</tr>
+					<tr>
+						<td>Wartbarkeit</td>
+						<td><span class="bad">✗ Komplex</span></td>
+						<td><span class="good">✓ Einfach</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<button onclick="checkCriticalAnalysis()">Analyse überprüfen</button>
+		<div id="resultI1E" class="result hidden"></div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- J1G - Einfaches ERD zeichnen -->
+<div id="quizJ1G" class="quiz hidden">
+	<h2>J1G – Einfaches ERD zeichnen</h2>
+
+	<div class="erd-tool">
+		<div class="toolbar">
+			<button id="addEntityBtn">
+				<i class="fas fa-plus"></i>
+				Entität
+			</button>
+			<button id="addAttributeBtn">
+				<i class="fas fa-tag"></i>
+				Attribut
+			</button>
+			<button id="startRelationshipBtn">
+				<i class="fas fa-link"></i>
+				Beziehung
+			</button>
+			<select id="currentCardinality">
+				<option value="1:1">1:1</option>
+				<option value="1:n" selected>1:n</option>
+				<option value="n:m">n:m</option>
+			</select>
+			<button id="clearERDBtn">
+				<i class="fas fa-trash"></i>
+				Löschen
+			</button>
+			<button id="saveERDBtn">
+				<i class="fas fa-save"></i>
+				Speichern
+			</button>
+			<button id="checkERDBtn" onclick="checkERD()">
+				<i class="fas fa-check"></i>
+				Überprüfen
+			</button>
+		</div>
+
+		<div id="erd-canvas" class="erd-canvas-large">
+			<!-- Hier wird das ERD gezeichnet -->
+		</div>
+
+		<div id="erd-output" class="result hidden"></div>
+		<div id="resultJ1G" class="result hidden"></div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- J1F - ERD mit Zwischentabellen -->
+<div id="quizJ1F" class="quiz hidden">
+	<h2>J1F – ERD mit Zwischentabellen</h2>
+	<p>Entscheide, welche Tabellen korrekt sind:</p>
+	<table border="1" id="tableJ1F">
+		<thead>
+			<tr>
+				<th>Tabelle</th>
+				<th>Richtig/Falsch?</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Student-Kurs (Zwischentabelle für n:m)</td>
+				<td>
+					<select>
+						<option value="">– auswählen –</option>
+						<option value="1">Richtig</option>
+						<option value="0">Falsch</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Student (Primärschlüssel Matrikelnummer)</td>
+				<td>
+					<select>
+						<option value="">– auswählen –</option>
+						<option value="1">Richtig</option>
+						<option value="0">Falsch</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Kurs (Primärschlüssel Kursnummer)</td>
+				<td>
+					<select>
+						<option value="">– auswählen –</option>
+						<option value="1">Richtig</option>
+						<option value="0">Falsch</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<button onclick="checkTableCritique('tableJ1F','resultJ1F')">
+		Auswerten
+	</button>
+	<p id="resultJ1F" class="result hidden"></p>
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
+
+<!-- J1E - ERD Tool selbstständig nutzen -->
+<div id="quizJ1E" class="quiz hidden">
+	<h2>J1E – ERD Tool selbstständig nutzen</h2>
+
+	<div class="erd-task">
+		<h3>Aufgabe: Bibliothekssystem ERD</h3>
+		<p>
+			Erstelle ein ERD für ein Bibliothekssystem mit folgenden
+			Anforderungen:
+		</p>
+
+		<div class="requirements">
+			<h4>Anforderungen:</h4>
+			<ol>
+				<li>
+					Entitäten müssen enthalten:
+					<ul>
+						<li>
+							<strong>Buch</strong>
+							(ISBN, Titel, Autor, Jahr)
+						</li>
+						<li>
+							<strong>Leser</strong>
+							(LeserID, Name, Adresse)
+						</li>
+						<li>
+							<strong>Ausleihe</strong>
+							(AusleihID, Ausleihdatum, Rückgabedatum)
+						</li>
+					</ul>
+				</li>
+				<li>
+					Beziehungen:
+					<ul>
+						<li>Ein Leser kann mehrere Bücher ausleihen</li>
+						<li>
+							Ein Buch kann von verschiedenen Lesern ausgeliehen
+							werden
+						</li>
+						<li>
+							Jede Ausleihe gehört zu genau einem Leser und einem
+							Buch
+						</li>
+					</ul>
+				</li>
+				<li>
+					Attribute:
+					<ul>
+						<li>Mindestens 3 Attribute pro Entität</li>
+						<li>Primärschlüssel für jede Entität</li>
+						<li>Fremdschlüssel für Beziehungen</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+
+		<div class="erd-tool-container">
+			<div class="toolbar">
+				<button id="addEntityBtnJ1E">Entität hinzufügen</button>
+				<button id="addAttrBtnJ1E">Attribut hinzufügen</button>
+				<button id="startRelationshipBtnJ1E">Beziehung zeichnen</button>
+				<select id="currentCardinalityJ1E">
+					<option value="1:1">1:1</option>
+					<option value="1:n">1:n</option>
+					<option value="n:m" selected>n:m</option>
+				</select>
+				<button id="saveERDBtnJ1E">Speichern</button>
+				<button id="loadERDBtnJ1E">Laden</button>
+				<button id="clearERDBtnJ1E">Löschen</button>
+				<button id="checkTaskBtn" onclick="checkERDTask()">
+					Aufgabe überprüfen
+				</button>
+			</div>
+
+			<div id="erd-canvas-j1e" class="erd-canvas-large">
+				<!-- ERD wird hier gezeichnet -->
+			</div>
+
+			<div id="erd-output-j1e" class="result hidden"></div>
+		</div>
+
+		<div class="task-validation">
+			<h4>Automatische Überprüfung:</h4>
+			<div id="validation-results"></div>
+
+			<h4>Tipps:</h4>
+			<ul>
+				<li>
+					Verwende für n:m-Beziehungen eine Zwischentabelle "Ausleihe"
+				</li>
+				<li>ISBN ist ein guter Primärschlüssel für Bücher</li>
+				<li>
+					Denke an die Kardinalitäten: Leser (1) – Ausleihe (n) – Buch
+					(1)
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<button onclick="goHome()">Zurück zum Menü</button>
+</div>
