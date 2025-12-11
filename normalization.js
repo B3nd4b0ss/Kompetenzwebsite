@@ -234,7 +234,7 @@ function setupCriticalAnalysis() {
 	const levelDisplay = document.getElementById('normalizationLevel');
 
 	if (slider && levelDisplay) {
-		const levels = ['Keine NF', '1NF', '2NF', '3NF', 'BCNF', '4NF', '5NF'];
+		const levels = ['Keine NF', '1NF', '2NF', '3NF'];
 
 		slider.addEventListener('input', function () {
 			const level = levels[this.value];
@@ -306,7 +306,7 @@ function updateNormalizationTradeoffs(level) {
 	];
 
 	const tradeoff = tradeoffs[level];
-	const levels = ['Keine NF', '1NF', '2NF', '3NF', 'BCNF', '4NF', '5NF'];
+	const levels = ['Keine NF', '1NF', '2NF', '3NF'];
 
 	// Update Diagramm oder Anzeige
 	const diagram = document.getElementById('tradeoffDiagram');
@@ -419,7 +419,7 @@ function checkCriticalAnalysis() {
 	if (sliderValue >= 2 && sliderValue <= 3) {
 		score += 40;
 		feedback.push('✓ Gute Wahl des Normalisierungsgrades (+40 Punkte)');
-	} else if (sliderValue >= 1 && sliderValue <= 4) {
+	} else if (sliderValue >= 1 && sliderValue) {
 		score += 30;
 		feedback.push('✓ Akzeptabler Normalisierungsgrad (+30 Punkte)');
 	} else {
