@@ -29,6 +29,18 @@
 				<button onclick="startQuiz('quiz6')">
 					C1E - Datentyp transformieren (umwandlung)
 				</button>
+				<button onclick="startQuiz('quiz7')">
+					D2G – Statistische Kenngrössen erläutern
+				</button>
+				<button onclick="startQuiz('quiz8')">
+					D2F – Statistik erstellen
+				</button>
+				<button onclick="startQuiz('quiz9')">
+					D2E – Statistik kritisch hinterfragen
+				</button>
+				<button onclick="startQuiz('quiz10')">
+					E1G – Datenschutz in Statistiken
+				</button>
 			</div>
 
 			<!-- Quiz 1 -->
@@ -240,11 +252,18 @@
 					<div class="card">
 						<div class="card-face card-front">Nominalskala</div>
 						<div class="card-face card-back">
-                            <ul>
-                                <li>Was sie ist: Eine Skala, die nur Gleichheit oder Ungleichheit von Merkmalen ausdrückt und keine Rangfolge zulässt.</li>
-                                <li>Beispiele: Geschlecht, Blutgruppen, Telefonnummern. </li>
-                            </ul>
-                        </div>
+							<ul>
+								<li>
+									Was sie ist: Eine Skala, die nur Gleichheit
+									oder Ungleichheit von Merkmalen ausdrückt
+									und keine Rangfolge zulässt.
+								</li>
+								<li>
+									Beispiele: Geschlecht, Blutgruppen,
+									Telefonnummern.
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="flashcard" onclick="flip(this)">
@@ -252,9 +271,16 @@
 						<div class="card-face card-front">Ordinalskala</div>
 						<div class="card-face card-back">
 							<ul>
-                                <li>Was sie ist: Eine Skala, die eine Rangordnung der Merkmale zulässt, aber keine genauen Abstände zwischen den Werten angibt.</li>
-                                <li>Beispiele: Schulnoten, Platzierungen in einem Wettkampf.</li>
-                            </ul>
+								<li>
+									Was sie ist: Eine Skala, die eine
+									Rangordnung der Merkmale zulässt, aber keine
+									genauen Abstände zwischen den Werten angibt.
+								</li>
+								<li>
+									Beispiele: Schulnoten, Platzierungen in
+									einem Wettkampf.
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -263,9 +289,15 @@
 						<div class="card-face card-front">Intervallskala</div>
 						<div class="card-face card-back">
 							<ul>
-                                <li>Eine Skala, bei der die Abstände zwischen den Zahlen bedeutsam sind und als gleich angesehen werden. Sie besitzt jedoch keinen natürlichen Nullpunkt, wodurch Verhältnisse nicht sinnvoll gebildet werden können.</li>
-                                <li>Beispiele: Temperatur in °C, IQ-Werte.</li>
-                        </ul>
+								<li>
+									Eine Skala, bei der die Abstände zwischen
+									den Zahlen bedeutsam sind und als gleich
+									angesehen werden. Sie besitzt jedoch keinen
+									natürlichen Nullpunkt, wodurch Verhältnisse
+									nicht sinnvoll gebildet werden können.
+								</li>
+								<li>Beispiele: Temperatur in °C, IQ-Werte.</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -274,9 +306,18 @@
 						<div class="card-face card-front">Verhältnisskala</div>
 						<div class="card-face card-back">
 							<ul>
-                                <li>Was sie ist: Die höchste Skalenstufe, die einen natürlichen Nullpunkt besitzt. Sowohl die Abstände als auch die Verhältnisse zwischen Zahlen haben eine sinnvolle Bedeutung. </li>
-                                <li>Beispiele: Länge, Gewicht, Absolute Temperatur (Kelvin).</li>
-                            </ul>
+								<li>
+									Was sie ist: Die höchste Skalenstufe, die
+									einen natürlichen Nullpunkt besitzt. Sowohl
+									die Abstände als auch die Verhältnisse
+									zwischen Zahlen haben eine sinnvolle
+									Bedeutung.
+								</li>
+								<li>
+									Beispiele: Länge, Gewicht, Absolute
+									Temperatur (Kelvin).
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -447,6 +488,288 @@
 				<button onclick="convertValue()">Umwandeln</button>
 
 				<p id="conversionResult" class="result hidden"></p>
+
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz7" class="quiz hidden">
+				<h2>D2G – Statistische Kenngrössen erläutern</h2>
+				<p>Klicke auf die Karten, um die Beschreibung zu sehen:</p>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Minimum</div>
+						<div class="card-face card-back">
+							Kleinster vorkommender Wert in den Daten.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Maximum</div>
+						<div class="card-face card-back">
+							Grösster vorkommender Wert in den Daten.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Mittelwert</div>
+						<div class="card-face card-back">
+							Durchschnitt aller Werte. Benötigt metrische Skalen.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Median</div>
+						<div class="card-face card-back">
+							Wert genau in der Mitte aller sortierten Daten.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Voraussetzungen</div>
+						<div class="card-face card-back">
+							Skalentyp, Datenqualität, genügend Beobachtungen.
+						</div>
+					</div>
+				</div>
+
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz8" class="quiz hidden">
+				<h2>D2F – Statistik erstellen</h2>
+				<form id="form8">
+					<p>
+						1) Welche Kenngrösse eignet sich NICHT für
+						Ordinalskalen?
+					</p>
+					<label>
+						<input type="radio" name="q8_1" value="0" />
+						Median
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_1" value="1" />
+						Mittelwert
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_1" value="0" />
+						Minimum
+					</label>
+					<br />
+
+					<p>
+						2) Welche Skala benötigst du zwingend für den
+						Mittelwert?
+					</p>
+					<label>
+						<input type="radio" name="q8_2" value="1" />
+						Intervall/Verhältnis
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_2" value="0" />
+						Ordinal
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_2" value="0" />
+						Nominal
+					</label>
+					<br />
+
+					<p>
+						3) Du hast Einkommen (CHF). Welche Kenngrössen sind
+						sinnvoll?
+					</p>
+					<label>
+						<input type="radio" name="q8_3" value="1" />
+						Mittelwert, Median, Minimum, Maximum
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_3" value="0" />
+						Nur Kategorien zählen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_3" value="0" />
+						Nur Rangfolge bilden
+					</label>
+					<br />
+
+					<p>
+						4) Welche Voraussetzung ist wichtig für gute
+						Statistiken?
+					</p>
+					<label>
+						<input type="radio" name="q8_4" value="1" />
+						Hohe Datenqualität
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_4" value="0" />
+						Wenige Beobachtungen
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_4" value="0" />
+						Beliebige Skalentypen mischen
+					</label>
+					<br />
+
+					<p>
+						5) Du misst Temperaturen in °C. Welche Art Statistik ist
+						möglich?
+					</p>
+					<label>
+						<input type="radio" name="q8_5" value="1" />
+						Intervallstatistik (Mittelwert erlaubt)
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_5" value="0" />
+						Verhältnisse bilden
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="q8_5" value="0" />
+						Nur Rangfolge
+					</label>
+					<br />
+				</form>
+
+				<button onclick="checkQuiz('form8','result8')">
+					Auswerten
+				</button>
+				<p id="result8" class="result hidden"></p>
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz9" class="quiz hidden">
+				<h2>D2E – Statistik kritisch hinterfragen</h2>
+				<p>
+					Klicke auf die Karten, um Beispiele für Kritikpunkte zu
+					sehen:
+				</p>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Unpassender Skalentyp
+						</div>
+						<div class="card-face card-back">
+							Mittelwert für Ordinalskalen ist problematisch.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Ausreisser</div>
+						<div class="card-face card-back">
+							Ausreisser können den Mittelwert stark verzerren.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Stichprobengrösse
+						</div>
+						<div class="card-face card-back">
+							Zu wenige Beobachtungen → keine zuverlässige
+							Statistik.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Datenqualität</div>
+						<div class="card-face card-back">
+							Fehlerhafte oder fehlende Werte beeinflussen das
+							Resultat.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Interpretation</div>
+						<div class="card-face card-back">
+							Korrelation ≠ Kausalität.
+						</div>
+					</div>
+				</div>
+
+				<button onclick="goHome()">Zurück zum Menü</button>
+			</div>
+			<div id="quiz10" class="quiz hidden">
+				<h2>E1G – Datenschutz in Statistiken</h2>
+				<p>
+					Klicke auf die Karten, um wichtige Datenschutz-Themen zu
+					sehen:
+				</p>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">
+							Personenbezogene Daten
+						</div>
+						<div class="card-face card-back">
+							Darf nicht ohne Einwilligung verwendet oder
+							weitergegeben werden.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Anonymisierung</div>
+						<div class="card-face card-back">
+							Persönliche Bezüge müssen vollständig entfernt
+							werden.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Datenminimierung</div>
+						<div class="card-face card-back">
+							Nur die wirklich benötigten Daten dürfen erhoben
+							werden.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Weitergabe</div>
+						<div class="card-face card-back">
+							Weitergabe nur mit Rechtsgrundlage oder
+							Einwilligung.
+						</div>
+					</div>
+				</div>
+
+				<div class="flashcard" onclick="flip(this)">
+					<div class="card">
+						<div class="card-face card-front">Risiken</div>
+						<div class="card-face card-back">
+							Re-Identifikation möglich, wenn zu viele Details
+							vorhanden sind.
+						</div>
+					</div>
+				</div>
 
 				<button onclick="goHome()">Zurück zum Menü</button>
 			</div>
