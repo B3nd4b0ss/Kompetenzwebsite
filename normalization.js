@@ -405,75 +405,71 @@ function updateTradeoffAnalysis() {
 }
 
 function checkCriticalAnalysis() {
-	// Überprüfe alle interaktiven Elemente
-	const sliderValue =
-		document.getElementById('normalizationSlider')?.value || 0;
-	const checkboxes = document.querySelectorAll('.tradeoff-checkbox:checked');
-	const scenarioAnswers = document.querySelectorAll('.scenario-answer');
+	const slider = document.getElementById('normalizationSlider');
+	const sliderValue = slider ? Number(slider.value) : 0;
+
+	const solution1 = document.getElementById('solution1');
 
 	let score = 0;
 	let maxScore = 100;
 	let feedback = [];
 
-	// Bewertung Slider (optimal ist 2-3)
+	// Slider-Bewertung (optimal: 2–3)
 	if (sliderValue >= 2 && sliderValue <= 3) {
 		score += 40;
-		feedback.push('✓ Gute Wahl des Normalisierungsgrades (+40 Punkte)');
-	} else if (sliderValue >= 1 && sliderValue) {
-		score += 30;
-		feedback.push('✓ Akzeptabler Normalisierungsgrad (+30 Punkte)');
+		feedback.push('✓ Optimaler Normalisierungsgrad gewählt (+40)');
+	} else if (sliderValue >= 1 && sliderValue <= 4) {
+		score += 25;
+		feedback.push('✓ Akzeptabler Normalisierungsgrad (+25)');
 	} else {
 		score += 10;
-		feedback.push('✗ Normalisierungsgrad könnte optimiert werden');
+		feedback.push('✗ Ungünstiger Normalisierungsgrad (+10)');
 	}
 
-	// Bewertung Checkboxen
-	const correctCheckboxes = Array.from(checkboxes).filter(
-		(cb) => cb.value === '1'
-	).length;
-	const totalCheckboxes =
-		document.querySelectorAll('.tradeoff-checkbox').length;
-	const checkboxPercentage = Math.round(
-		(correctCheckboxes / totalCheckboxes) * 100
+	// Szenario 1 – Lösungsvorschlag
+	if (solution1 && solution1.value === '1') {
+		score += 30;
+		feedback.push('✓ Szenario 1 korrekt gelöst (+30)');
+	} else {
+		feedback.push('✗ Szenario 1 nicht optimal gelöst');
+	}
+
+	// Szenario 1 – Checkboxen (Impact)
+	const impacts = document.querySelectorAll(
+		'.impact-check input[type="checkbox"]'
 	);
 
-	score += Math.round(checkboxPercentage * 0.4); // Bis zu 40 Punkte
-	feedback.push(
-		`✓ ${correctCheckboxes}/${totalCheckboxes} Trade-offs korrekt erkannt (+${Math.round(
-			checkboxPercentage * 0.4
-		)} Punkte)`
-	);
+	let correctImpacts = 0;
+	let totalImpacts = impacts.length;
 
-	// Bewertung Szenario-Antworten
-	scenarioAnswers.forEach((answer, index) => {
-		if (answer.value === answer.dataset.correct) {
-			score += 5;
-			feedback.push(`✓ Szenario ${index + 1} korrekt (+5 Punkte)`);
-		}
+	impacts.forEach((cb) => {
+		if (cb.checked && cb.value === '1') correctImpacts++;
+		if (cb.checked && cb.value === '0') correctImpacts--;
 	});
 
-	// Ergebnis anzeigen
+	if (correctImpacts < 0) correctImpacts = 0;
+
+	const impactScore = Math.round((correctImpacts / totalImpacts) * 30);
+	score += impactScore;
+
+	feedback.push(
+		`✓ Auswirkungen erkannt: ${correctImpacts}/${totalImpacts} (+${impactScore})`
+	);
+
+	// Anzeige
 	const result = document.getElementById('resultI1E');
 	result.innerHTML = `
-        <h4>Kritische Analyse Auswertung</h4>
-        <p><strong>Gesamtpunktzahl:</strong> ${Math.min(
-			score,
-			maxScore
-		)}/${maxScore}</p>
-        <div class="feedback">
-            ${feedback.map((f) => `<p>${f}</p>`).join('')}
-        </div>
-        <div class="analysis-summary" style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 5px;">
-            <p><strong>Zusammenfassung:</strong></p>
-            <p>${
-				score >= 80
-					? '🎉 Ausgezeichnet! Du verstehst die Normalisierung und ihre Konsequenzen.'
-					: score >= 60
-					? '👍 Gut! Du hast die wichtigsten Konzepte verstanden.'
-					: '📚 Es gibt noch Lücken im Verständnis. Übe weiter!'
-			}</p>
-            <p><em>Tipp:</em> In der Praxis wird oft 3NF angestrebt, mit gezielter Denormalisierung für Performance.</p>
-        </div>
-    `;
+		<h4>Kritische Analyse – Auswertung</h4>
+		<p><strong>Punkte:</strong> ${score}/${maxScore}</p>
+		${feedback.map((f) => `<p>${f}</p>`).join('')}
+		<p><strong>Bewertung:</strong> ${
+			score >= 80
+				? '🎉 Sehr gut'
+				: score >= 60
+				? '👍 Gut'
+				: '📚 Übungsbedarf'
+		}</p>
+	`;
+
 	result.classList.remove('hidden');
 }

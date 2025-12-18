@@ -167,3 +167,80 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		});
 });
+
+let currentChart = null;
+
+function initializeD1F() {
+	const canvas = document.getElementById('chart-canvas');
+
+	if (!canvas) return;
+
+	// Altes Diagramm löschen, falls vorhanden
+	if (currentChart) {
+		currentChart.destroy();
+		currentChart = null;
+	}
+}
+
+
+function renderChart() {
+	const textarea = document.getElementById('chart-data');
+	const chartType = document.getElementById('chart-type').value;
+	const canvas = document.getElementById('chart-canvas');
+
+	if (!textarea || !canvas) return;
+
+	const lines = textarea.value.trim().split('\n');
+
+	// Header entfernen
+	const dataLines = lines.slice(1);
+
+	const labels = [];
+	const values = [];
+
+	dataLines.forEach((line) => {
+		const [label, value] = line.split(',');
+		if (label && value && !isNaN(value)) {
+			labels.push(label.trim());
+			values.push(Number(value));
+		}
+	});
+
+	// Altes Diagramm entfernen
+	if (currentChart) {
+		currentChart.destroy();
+	}
+
+	currentChart = new Chart(canvas, {
+		type: chartType,
+		data: {
+			labels: labels,
+			datasets: [
+				{
+					label: 'Werte',
+					data: values,
+					backgroundColor: [
+						'#007bff',
+						'#28a745',
+						'#ffc107',
+						'#dc3545',
+						'#17a2b8'
+					],
+					borderWidth: 1
+				}
+			]
+		},
+		options: {
+			responsive: true,
+			maintainAspectRatio: false,
+			scales:
+				chartType === 'pie'
+					? {}
+					: {
+							y: {
+								beginAtZero: true
+							}
+					  }
+		}
+	});
+}
